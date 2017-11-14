@@ -1,0 +1,20 @@
+.title-songs{
+    font-size: 4em;
+    border: lightgray solid 2px;
+    border-radius: 25px;
+    padding: .1em;
+}
+
+.play{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    margin: 0 5px;
+}
+
+.play i {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}

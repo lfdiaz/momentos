@@ -1,0 +1,15 @@
+button {
+    background-color: lightgray;
+    padding: 6px;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover{
+    color: lightgray;
+    background-color:  white;
+}
+
+.inline {
+    display: inline-block;
+}
