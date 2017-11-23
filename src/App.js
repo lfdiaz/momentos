@@ -27,6 +27,7 @@ class App extends Component {
 
   setWordData(word, data){
 
+    console.log(data);
     this.setState({
       word: word,
       data : data
@@ -35,9 +36,11 @@ class App extends Component {
   }
 
   currentSong(src){
+
     this.setState({
       currentSong : src
     })
+
   }
 
   display(){
@@ -56,8 +59,8 @@ class App extends Component {
   render() {
 
     return (
-      <div className="App">
-        <ListenButton setWord={this.setWord} setWordData={this.setWordData} displayListening={this.state.displayListening} display={this.display} displayWord={this.displayWord} listening={this.state.listening}/>
+      <div className="container-fluid">
+        <ListenButton setWord={this.setWord} setWordData={this.setWordData} displayListening={this.state.displayListening} display={this.display} displayWord={this.displayWord} listening={this.state.listening} data={this.state.data} currentSong={this.currentSong} song={this.state.currentSong}/>
         <SongList data={this.state.data} currentSong={this.currentSong}/>
         <AudioPlayer currentSong={this.state.currentSong} data={this.state.data}/>
       </div>
